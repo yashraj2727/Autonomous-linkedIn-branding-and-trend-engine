@@ -19,7 +19,11 @@ The system deploys a crew of 3 specialized autonomous agents that work collabora
 ### 1. Real-Time Execution Demo (Video)
 Watch the multi-agent system in action, running trends research, agent collaboration, and content generation in real-time inside the terminal:
 
-<video src="demo.mp4" width="100%" height="auto" controls></video>
+
+<a href="https://github.com/yashraj2727/Autonomous-linkedin-branding-and-trend-engine/blob/main/demo.mp4?raw=true" target="_blank">
+  <img src="https://img.shields.io/badge/▶_Watch_Demo_Video-Click_to_Play-blue?style=for-the-badge&logo=github" alt="Watch Demo Video">
+</a
+
 
 ---
 ### 2. Step-by-Step Terminal Outputs (Screenshots)
