@@ -1,54 +1,44 @@
-# Project1 Crew
+# 🚀 Autonomous LinkedIn Branding and Trend Engine
 
-Welcome to the Project1 Crew project, powered by [crewAI](https://crewai.com). This template is designed to help you set up a multi-agent AI system with ease, leveraging the powerful and flexible framework provided by crewAI. Our goal is to enable your agents to collaborate effectively on complex tasks, maximizing their collective intelligence and capabilities.
+An automated multi-agent AI system built using the **CrewAI** framework and powered by **Groq API (Llama-3.3-70b-versatile)**. This project automates social media marketing by analyzing viral trends and drafting high-converting, professional LinkedIn posts.
 
-## Installation
+---
 
-Ensure you have Python >=3.10 <3.14 installed on your system. This project uses [UV](https://docs.astral.sh/uv/) for dependency management and package handling, offering a seamless setup and execution experience.
+## 🤖 AI Agents Workflow
 
-First, if you haven't already, install uv:
+1. **Social Media Trend Researcher:** Scans and extracts the top 5 latest trends regarding the specified topic.
+2. **LinkedIn Content Creator:** Crafts an engaging, emoji-rich post under 300 words with a strong hook and CTA.
+3. **Hashtag & SEO Specialist:** Generates 10 optimized hashtags to maximize post reach and visibility.
 
-```bash
-pip install uv
-```
+---
 
-Next, navigate to your project directory and install the dependencies:
+# 📸 Project Demo & Output
 
-(Optional) Lock the dependencies and install them by using the CLI command:
-```bash
-crewai install
-```
-### Customizing
+# 1. Terminal Execution Demo (Video)
+Watch the multi-agent system in action, running trend research and content generation in real-time:
 
-**Add your `OPENAI_API_KEY` into the `.env` file**
+[Click to Play Video](./demo.mp4)
 
-- Modify `src/project1/config/agents.yaml` to define your agents
-- Modify `src/project1/config/tasks.yaml` to define your tasks
-- Modify `src/project1/crew.py` to add your own logic, tools and specific args
-- Modify `src/project1/main.py` to add custom inputs for your agents and tasks
+# 2. Final Generated Output (Screenshot)
+Below is the screenshot of the autonomous agents successfully executing and generating the LinkedIn post inside the VS Code terminal:
 
-## Running the Project
+![CrewAI Execution Output](ss1.png)
+(ss2.png)
+(ss3.png)
+(ss4.png)
+(ss5.png)
+(ss6.png)
+(ss7.png)
+---
 
-To kickstart your crew of AI agents and begin task execution, run this from the root folder of your project:
+## 🛠️ Setup & Installation Instructions
 
-```bash
-$ crewai run
-```
+### 1. Prerequisites
+Ensure you have Python >= 3.10 installed on your system. This project uses `uv` for lightning-fast dependency management.
 
-This command initializes the project1 Crew, assembling the agents and assigning them tasks as defined in your configuration.
-
-This example, unmodified, will run the create a `report.md` file with the output of a research on LLMs in the root folder.
-
-## Understanding Your Crew
-
-The project1 Crew is composed of multiple AI agents, each with unique roles, goals, and tools. These agents collaborate on a series of tasks, defined in `config/tasks.yaml`, leveraging their collective skills to achieve complex objectives. The `config/agents.yaml` file outlines the capabilities and configurations of each agent in your crew.
-
-## Support
-
-For support, questions, or feedback regarding the Project1 Crew or crewAI.
-- Visit our [documentation](https://docs.crewai.com)
-- Reach out to us through our [GitHub repository](https://github.com/joaomdmoura/crewai)
-- [Join our Discord](https://discord.com/invite/X4JWnZnxPb)
-- [Chat with our docs](https://chatg.pt/DWjSBZn)
-
-Let's create wonders together with the power and simplicity of crewAI.
+### 2. Environment Setup
+Create a `.env` file in the root directory and add your Groq credentials securely:
+```env
+OPENAI_API_KEY=your_groq_api_key_here
+OPENAI_BASE_URL=[https://api.groq.com/openai/v1](https://api.groq.com/openai/v1)
+OPENAI_MODEL_NAME=llama-3.3-70b-versatile
