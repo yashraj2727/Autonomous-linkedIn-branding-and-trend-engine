@@ -1,44 +1,60 @@
 # 🚀 Autonomous LinkedIn Branding and Trend Engine
 
-An automated multi-agent AI system built using the **CrewAI** framework and powered by **Groq API (Llama-3.3-70b-versatile)**. This project automates social media marketing by analyzing viral trends and drafting high-converting, professional LinkedIn posts.
+An automated multi-agent AI system built using the advanced **CrewAI** framework and powered by the blazing-fast **Groq API (Llama-3.3-70b-versatile)**. This project automates social media marketing by analyzing current viral tech trends and drafting high-converting, professional LinkedIn posts completely autonomously.
 
 ---
 
-## 🤖 AI Agents Workflow
+## 🤖 AI Agents Workflow & Architecture
 
-1. **Social Media Trend Researcher:** Scans and extracts the top 5 latest trends regarding the specified topic.
-2. **LinkedIn Content Creator:** Crafts an engaging, emoji-rich post under 300 words with a strong hook and CTA.
-3. **Hashtag & SEO Specialist:** Generates 10 optimized hashtags to maximize post reach and visibility.
+The system deploys a crew of 3 specialized autonomous agents that work collaboratively:
+
+1. **Social Media Trend Researcher:** Scans and extracts the top 5 latest trends and insights regarding the specified technical topic.
+2. **LinkedIn Content Creator:** Takes the researched trends and crafts an engaging, emoji-rich professional post under 300 words with a strong hook and clear Call-to-Action (CTA).
+3. **Hashtag & SEO Specialist:** Analyzes the final draft and generates 10 optimized, high-reach hashtags to maximize visibility on the LinkedIn algorithm.
 
 ---
 
-# 📸 Project Demo & Output
+## 📸 Project Demo & Step-by-Step Execution
 
-# 1. Terminal Execution Demo (Video)
-Watch the multi-agent system in action, running trend research and content generation in real-time:
+### 1. Real-Time Execution Demo (Video)
+Watch the multi-agent system in action, running trends research, agent collaboration, and content generation in real-time inside the terminal:
 
-[Click to Play Video](./demo.mp4)
+[▶️ Click to Play Demo Video](./demo.mp4)
 
-# 2. Final Generated Output (Screenshot)
-Below is the screenshot of the autonomous agents successfully executing and generating the LinkedIn post inside the VS Code terminal:
+---
 
-![CrewAI Execution Output](ss1.png)
-(ss2.png)
-(ss3.png)
-(ss4.png)
-(ss5.png)
-(ss6.png)
-(ss7.png)
+### 2. Step-by-Step Terminal Outputs (Screenshots)
+Below is the complete visual walkthrough of the autonomous agents successfully executing their tasks step-by-step:
+
+#### 🔹 Step 1: Initializing the Crew & Starting Trend Research
+![Step 1: Crew Initialization](./ss1.png)
+
+#### 🔹 Step 2: Agent Kickoff & Analyzing Topics
+![Step 2: Agent Kickoff](./ss2.png)
+
+#### 🔹 Step 3: Trend Researcher Extracting Key Insights
+![Step 3: Trend Research](./ss3.png)
+
+#### 🔹 Step 4: Passing Insights to Content Creator Agent
+![Step 4: Passing Data between Agents](./ss4.png)
+
+#### 🔹 Step 5: Content Creator Crafting the LinkedIn Post Draft
+![Step 5: Writing Post Draft](./ss5.png)
+
+#### 🔹 Step 6: Hashtag Specialist Optimizing SEO & Tags
+![Step 6: Hashtag Optimization](./ss6.png)
+
+#### 🔹 Step 7: Final Viral-Ready Output Print
+![Step 7: Final Output Display](./ss7.png)
+
 ---
 
 ## 🛠️ Setup & Installation Instructions
 
 ### 1. Prerequisites
-Ensure you have Python >= 3.10 installed on your system. This project uses `uv` for lightning-fast dependency management.
+Ensure you have Python >= 3.10 and < 3.14 installed on your system. This project utilizes `uv` for lightning-fast dependency and package management.
 
-### 2. Environment Setup
-Create a `.env` file in the root directory and add your Groq credentials securely:
-```env
-OPENAI_API_KEY=your_groq_api_key_here
-OPENAI_BASE_URL=[https://api.groq.com/openai/v1](https://api.groq.com/openai/v1)
-OPENAI_MODEL_NAME=llama-3.3-70b-versatile
+### 2. Installation
+First, open your terminal inside the project directory and install `uv` (if you haven't already):
+```bash
+pip install uv
