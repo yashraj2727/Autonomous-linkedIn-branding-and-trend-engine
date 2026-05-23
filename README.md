@@ -19,7 +19,7 @@ The system deploys a crew of 3 specialized autonomous agents that work collabora
 ### 1. Real-Time Execution Demo (Video)
 Watch the multi-agent system in action, running trends research, agent collaboration, and content generation in real-time inside the terminal:
 
-[▶️ Click to Play Demo Video]<video src="demo.mp4" controls width="100%" poster="./ss7.png"></video>
+<video src="demo.mp4" controls width="100%" poster="./ss7.png"></video>
 ---
 
 ### 2. Step-by-Step Terminal Outputs (Screenshots)
